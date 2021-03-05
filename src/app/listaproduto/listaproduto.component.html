@@ -1,0 +1,29 @@
+
+<div class="row align-items-center" style="height: 60vh;">
+<div class="col-6">
+  <h1>Lista de Produtos</h1>
+    <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">#Id</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Preço</th>
+        <th scope="col">Quantidade</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let produto of Produtos">
+        <td>{{produto.id}}</td>
+        <td>{{produto.nome}}</td>
+        <td>{{produto.preco}}</td>
+        <td>{{produto.quantidade}}</td>
+        <td>
+          <span class="edit btn-danger btn-sm btn" (click)="delete(produto)" >Delete</span> &nbsp;
+          <span class="edit btn-success btn-sm btn" routerLink="/edit/{{produto.id}}">Edit</span>
+        </td>
+      </tr>
+    </tbody>
+    </table>
+</div>
+</div>

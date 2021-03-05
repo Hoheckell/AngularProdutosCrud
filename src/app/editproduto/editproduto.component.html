@@ -1,0 +1,22 @@
+<div class="container" style="max-width: 500px;">
+  <h3 class="mb-3 mt-5 text-center">Update User</h3>
+
+  <div class="form-group">
+    <label>Nome:</label>
+    <input type="text" [(ngModel)]="prodObj.nome" class="form-control" placeholder="Name">
+  </div>
+
+  <div class="form-group">
+    <label>Preço:</label>
+    <input type="text" [(ngModel)]="prodObj.preco" class="form-control" placeholder="Email">
+  </div>
+
+  <div class="form-group">
+    <label>Quantidade:</label>
+    <input type="text" [(ngModel)]="prodObj.quantidade" class="form-control" placeholder="Phone">
+  </div>
+
+  <div class="form-group">
+    <button class="btn btn-success btn-lg btn-block" (click)="updateProduto(prodObj.id, prodObj)">Update User</button>
+  </div>
+</div>
