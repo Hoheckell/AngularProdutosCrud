@@ -5,18 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavigationbarComponent } from './navigationbar/navigationbar.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { AddprodutoComponent } from './addproduto/addproduto.component';
+import { AddusuarioComponent } from './addusuario/addusuario.component';
 import { ListaprodutoComponent } from './listaproduto/listaproduto.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { EditprodutoComponent } from './editproduto/editproduto.component';
+import { EditusuarioComponent } from './editusuario/editusuario.component';
+import { LoginComponent } from './login/login.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { ProfileComponent } from './profile/profile.component';
+import { LogoutComponent } from './logout/logout.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavigationbarComponent,
-    AddprodutoComponent,
+    AddusuarioComponent,
     ListaprodutoComponent,
-    EditprodutoComponent
+    EditusuarioComponent,
+    LoginComponent,
+    DashboardComponent,
+    ProfileComponent,
+    LogoutComponent
   ],
   imports: [
     NgbModule,

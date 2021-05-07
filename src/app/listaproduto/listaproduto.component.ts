@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Produto, ProdutoService } from '../services/produto.service';
+import { Usuario, UsuarioService } from '../services/usuario.service';
 
 @Component({
   selector: 'app-listaproduto',
@@ -9,27 +9,27 @@ import { Produto, ProdutoService } from '../services/produto.service';
 })
 export class ListaprodutoComponent implements OnInit {
 
-  Produtos: any = [];
+  Usuarios: any = [];
   constructor
   (
-    public produtoService: ProdutoService,
+    public usuarioService: UsuarioService,
     public router: Router
     ) {
   }
 
   ngOnInit(): void {
-    this.fetchProduto();
+    this.fetchUsuarios();
   }
 
-  fetchProduto() {
-    return this.produtoService.getProdutos().subscribe((res: {}) => {
-      this.Produtos = res;
+  fetchUsuarios() {
+    return this.usuarioService.getUsuarios().subscribe((res: {}) => {
+      this.Usuarios = res;
     })
   }
 
-  delete(produto: Produto) {
-    return this.produtoService.delProduto(produto.id).subscribe((res: {}) => {
-      this.fetchProduto();
+  delete(usuario: Usuario) {
+    return this.usuarioService.delUsuario(usuario.id).subscribe(() => {
+      this.fetchUsuarios();
     })
   }
 

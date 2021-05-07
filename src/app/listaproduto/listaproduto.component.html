@@ -13,14 +13,13 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let produto of Produtos">
-        <td>{{produto.id}}</td>
-        <td>{{produto.nome}}</td>
-        <td>{{produto.preco}}</td>
-        <td>{{produto.quantidade}}</td>
+      <tr *ngFor="let usuario of Usuarios">
+        <td>{{usuario.id}}</td>
+        <td>{{usuario.nome}}</td>
+        <td>{{usuario.email}}</td>
         <td>
-          <span class="edit btn-danger btn-sm btn" (click)="delete(produto)" >Delete</span> &nbsp;
-          <span class="edit btn-success btn-sm btn" routerLink="/edit/{{produto.id}}">Edit</span>
+          <span class="edit btn-danger btn-sm btn" (click)="delete(usuario)" >Delete</span> &nbsp;
+          <span class="edit btn-success btn-sm btn" routerLink="/edit/{{usuario.id}}">Edit</span>
         </td>
       </tr>
     </tbody>

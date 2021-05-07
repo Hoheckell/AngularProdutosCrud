@@ -1,0 +1,21 @@
+<h1 class="form-heading">login Form</h1>
+<div class="login-form">
+  <div class="main-div">
+    <div class="panel">
+      <h2>Bem vindo</h2>
+      <p>Por favor use seu email e senha</p>
+    </div>
+    <form (submit)="submit()">
+      <div class="form-group">
+        <input type="email" class="form-control" [(ngModel)]="loginObj.email" [ngModelOptions]="{standalone: true}" id="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <input type="password" class="form-control" [(ngModel)]="loginObj.password" [ngModelOptions]="{standalone: true}" id="password" placeholder="Senha">
+      </div>
+      <div class="forgot">
+        <a href="/reset">Esqueceu a senha?</a>
+      </div>
+        <button type="submit" class="btn btn-primary">Login</button>
+      </form>
+  </div>
+</div>
