@@ -1,0 +1,14 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Serviço</th>
+      <th>Descrição</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let servico of services">
+      <td>{{servico.nome}}</td>
+      <td>{{servico.descricao}}</td>
+    </tr>
+  </tbody>
+</table>

@@ -14,6 +14,7 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LogoutComponent } from './logout/logout.component';
+import { NossosservicosComponent } from './nossosservicos/nossosservicos.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { LogoutComponent } from './logout/logout.component';
     LoginComponent,
     DashboardComponent,
     ProfileComponent,
-    LogoutComponent
+    LogoutComponent,
+    NossosservicosComponent
   ],
   imports: [
     NgbModule,

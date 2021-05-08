@@ -26,12 +26,12 @@ export class ServicoService {
   httpHeader = {
     headers: new HttpHeaders({
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer '+localStorage.getItem('token')
+      'Authorization': 'Bearer '+localStorage.getItem('auth_token')
     })
   }
 
-  getServicos(): Observable<Servico> {
-    return this.httpClient.get<Servico>(this.endpoint + '/')
+  getServicos(): Observable<Servico[]> {
+    return this.httpClient.get<Servico[]>(this.endpoint + '/', this.httpHeader)
     .pipe(
       retry(1),
       catchError(this.processError)
