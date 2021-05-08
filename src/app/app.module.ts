@@ -13,7 +13,6 @@ import { EditusuarioComponent } from './editusuario/editusuario.component';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
-import { LogoutComponent } from './logout/logout.component';
 import { NossosservicosComponent } from './nossosservicos/nossosservicos.component';
 @NgModule({
   declarations: [
@@ -25,7 +24,6 @@ import { NossosservicosComponent } from './nossosservicos/nossosservicos.compone
     LoginComponent,
     DashboardComponent,
     ProfileComponent,
-    LogoutComponent,
     NossosservicosComponent
   ],
   imports: [

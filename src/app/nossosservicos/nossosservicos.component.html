@@ -1,14 +1,11 @@
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>Serviço</th>
-      <th>Descrição</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let servico of services">
-      <td>{{servico.nome}}</td>
-      <td>{{servico.descricao}}</td>
-    </tr>
-  </tbody>
-</table>
+<div class="container" style="display: flex;flex-direction: row;flex-wrap: wrap;">
+<div class="card col-md-4" *ngFor="let servico of services">
+  <img [src]="'../../assets/images/'+servico.image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{servico.nome}}</h5>
+    <p class="card-text">{{servico.descricao}}</p>
+    <a href="#" class="btn btn-primary">Pesquisar</a>
+  </div>
+</div>
+</div>
+

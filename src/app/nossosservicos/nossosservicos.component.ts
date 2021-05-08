@@ -11,7 +11,7 @@ import { UsuarioService } from '../services/usuario.service';
 export class NossosservicosComponent implements OnInit {
 
   loggedUser: any =  false;
-  services: Servico[] = [{id:'',nome:'',descricao:''}];
+  services: Servico[] = [{id:'',nome:'',descricao:'',image:''}];
   constructor(public servicoService: ServicoService,
     public router: Router) { }
 
@@ -20,7 +20,7 @@ export class NossosservicosComponent implements OnInit {
       this.loggedUser = true
     }
     this.servicoService.getServicos().subscribe((data: Servico[]) => {
-      this.services = data
+      this.services = data;
     });
   }
 
