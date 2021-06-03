@@ -12,16 +12,19 @@ export class NossosservicosComponent implements OnInit {
 
   loggedUser: any =  false;
   services: Servico[] = [{id:'',nome:'',descricao:'',image:''}];
+  rota:any;
   constructor(public servicoService: ServicoService,
     public router: Router) { }
 
   ngOnInit(): void {
+    this.rota = this.router.url;
     if(localStorage.getItem('auth_token') != null && localStorage.getItem('auth_token') != ""){
       this.loggedUser = true
     }
-    this.servicoService.getServicos().subscribe((data: Servico[]) => {
-      this.services = data;
-    });
+
+      this.servicoService.getServicos().subscribe((data: Servico[]) => {
+        this.services = data;
+      });
   }
 
 }

@@ -14,6 +14,9 @@ import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NossosservicosComponent } from './nossosservicos/nossosservicos.component';
+import { HomeComponent } from './home/home.component';
+import { QuemsomosComponent } from './quemsomos/quemsomos.component';
+import { MaosaobraComponent } from './maosaobra/maosaobra.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +27,10 @@ import { NossosservicosComponent } from './nossosservicos/nossosservicos.compone
     LoginComponent,
     DashboardComponent,
     ProfileComponent,
-    NossosservicosComponent
+    NossosservicosComponent,
+    HomeComponent,
+    QuemsomosComponent,
+    MaosaobraComponent
   ],
   imports: [
     NgbModule,

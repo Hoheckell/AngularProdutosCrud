@@ -9,12 +9,21 @@ import { Router } from '@angular/router';
 export class NavigationbarComponent implements OnInit {
 
   loggedUser: any =  false;
+  rota:any;
   constructor(private router: Router) { }
 
   ngOnInit(): void {
+    this.rota = false;
+    if(this.router.url == '/'){
+      this.rota = true;
+    }
     if(localStorage.getItem('auth_token') != null && localStorage.getItem('auth_token') != ""){
       this.loggedUser = true
     }
+  }
+
+  home(){
+    this.router.navigate(['/home']);
   }
 
   logout(){

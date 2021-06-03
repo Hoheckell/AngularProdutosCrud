@@ -21,7 +21,6 @@
     "@angular/router": "~11.2.3",
     "@ng-bootstrap/ng-bootstrap": "^9.0.2",
     "bootstrap": "^4.6.0",
-    "jquery": "^3.5.1",
     "ngx-bootstrap": "^6.2.0",
     "nodemon": "^2.0.7",
     "pg": "^8.5.1",
@@ -33,7 +32,7 @@
     "zone.js": "~0.11.3"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "~0.1102.2",
+    "@angular-devkit/build-angular": "^0.901.15",
     "@angular/cli": "~11.2.2",
     "@angular/compiler-cli": "~11.2.3",
     "@types/jasmine": "~3.6.0",
